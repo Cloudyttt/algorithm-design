@@ -16,6 +16,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TMyYXJHfl4WrhdQ0GYzEV5r8Mb" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -29,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -78,6 +82,7 @@
       <workItem from="1576823724667" duration="9288000" />
       <workItem from="1577492847705" duration="8092000" />
       <workItem from="1577759910482" duration="2478000" />
+      <workItem from="1577763409777" duration="269000" />
     </task>
     <servers />
   </component>

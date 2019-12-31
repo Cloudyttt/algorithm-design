@@ -1,6 +1,6 @@
 # 算法设计
 
-English | [简体中文](./README-zh.md)
+[English](./README.md) | 简体中文
 
 > 一些算法设计的汇总。
 
