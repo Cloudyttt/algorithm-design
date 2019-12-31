@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55df4913-7f64-4e2f-84fb-8d62adbfab3c" name="Default Changelist" comment="" />
+    <list default="true" id="55df4913-7f64-4e2f-84fb-8d62adbfab3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-zh.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +24,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TMyYXJHfl4WrhdQ0GYzEV5r8Mb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -30,6 +37,7 @@
     <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -82,7 +90,8 @@
       <workItem from="1576823724667" duration="9288000" />
       <workItem from="1577492847705" duration="8092000" />
       <workItem from="1577759910482" duration="2478000" />
-      <workItem from="1577763409777" duration="269000" />
+      <workItem from="1577763409777" duration="1177000" />
+      <workItem from="1577783038035" duration="885000" />
     </task>
     <servers />
   </component>
@@ -99,6 +108,9 @@
         <option value="$PROJECT_DIR$/Sort_ts/shellSort.js" />
       </list>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="164" key="SettingsEditor" timestamp="1576817231554">
