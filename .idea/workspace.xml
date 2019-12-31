@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55df4913-7f64-4e2f-84fb-8d62adbfab3c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1TMyYXJHfl4WrhdQ0GYzEV5r8Mb" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55df4913-7f64-4e2f-84fb-8d62adbfab3c" name="Default Changelist" comment="" />
+      <created>1573284307168</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573284307168</updated>
+      <workItem from="1573284309551" duration="452000" />
+      <workItem from="1573538212430" duration="6942000" />
+      <workItem from="1573545878345" duration="2321000" />
+      <workItem from="1573548822394" duration="310000" />
+      <workItem from="1575423793343" duration="4455000" />
+      <workItem from="1576369351116" duration="180000" />
+      <workItem from="1576478078895" duration="4329000" />
+      <workItem from="1576808586014" duration="669000" />
+      <workItem from="1576810205273" duration="7295000" />
+      <workItem from="1576823724667" duration="9288000" />
+      <workItem from="1577492847705" duration="8092000" />
+      <workItem from="1577759910482" duration="2478000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Sort_ts/bubbleSort.js" />
+        <option value="$PROJECT_DIR$/Sort_ts/selectSort.js" />
+        <option value="$PROJECT_DIR$/Sort_ts/insertSort.js" />
+        <option value="$PROJECT_DIR$/Sort_ts/mergeSort.js" />
+        <option value="$PROJECT_DIR$/Sort_ts/quickSort.js" />
+        <option value="$PROJECT_DIR$/Sort_ts/heapSort.js" />
+        <option value="$PROJECT_DIR$/Sort_ts/shellSort.js" />
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="164" key="SettingsEditor" timestamp="1576817231554">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="0" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1576817231554" />
+  </component>
+</project>

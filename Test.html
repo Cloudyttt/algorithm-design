@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>测试</title>
+</head>
+<body>
+<form id="arrForm">
+  <h1>选择数组</h1>
+  <label><h3><input name="array" type="radio" value="0" checked/>乱序1：[5, 2, 1, 6, 7, 4, 9, 8, 0, 3]</h3></label>
+  <label><h3><input name="array" type="radio" value="1" />乱序2：[10, 6, 20, 23, 48, 16, 34, 29, 50, 0, 32]</h3></label>
+  <label><h3><input name="array" type="radio" value="2" />正序：[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]</h3></label>
+  <label><h3><input name="array" type="radio" value="3" />逆序：[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]</h3></label>
+</form>
+<h1>排序结果:</h1>
+  <h1 id="output" style="height: 100px; width: 500px; border: 3px dashed red; border-radius: 20px; line-height: 100px;text-align: center"></h1>
+  <button id="btn" style="width: 100px; cursor: pointer"><h1>计算</h1></button>
+</body>
+<script src="Sort/bubbleSort.js"></script>
+<script src="Sort/quickSort.js"></script>
+<script src="Sort/insertSort.js"></script>
+<script src="Sort/selectSort.js"></script>
+<script>
+  let arrForm = document.getElementById('arrForm');
+  let arr1 = [5, 2, 1, 6, 7, 4, 9, 8, 0, 3];
+  let arr2 = [10, 6, 20, 23, 48, 16, 34, 29, 50, 0, 32];
+  let arr3 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  let arr4 = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+  let arrAll = [arr1,arr2,arr3,arr4];
+  let sortedArr = document.getElementById('output');
+  let btn = document.getElementById('btn');
+  let sort = (arr, sortFun) => {
+    sortFun(arr);
+    sortedArr.innerHTML = arr;
+  };
+  let radioArray = document.getElementsByName('array');
+  let arr = [];
+  console.log(arr);
+  btn.addEventListener('click', ()=>{
+    radioArray.forEach(node => {
+      if (node.checked === true){
+        arr = [...arrAll[parseInt(node.value)]];
+      }
+    });
+    
+    sort(arr, insertSort);
+  })
+</script>
+</html>
