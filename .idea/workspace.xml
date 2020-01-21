@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55df4913-7f64-4e2f-84fb-8d62adbfab3c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README-zh.md" beforeDir="false" afterPath="$PROJECT_DIR$/README-zh.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@github.com:Cloudyttt/-Algorithm-Design-.git" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1TMyYXJHfl4WrhdQ0GYzEV5r8Mb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -91,8 +96,17 @@
       <workItem from="1577492847705" duration="8092000" />
       <workItem from="1577759910482" duration="2478000" />
       <workItem from="1577763409777" duration="1177000" />
-      <workItem from="1577783038035" duration="885000" />
+      <workItem from="1577783038035" duration="1607000" />
+      <workItem from="1577932808699" duration="2030000" />
     </task>
+    <task id="LOCAL-00001" summary="优化README.md">
+      <created>1577783960586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577783960586</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,8 +125,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="优化README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化README.md" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="466" y="128" key="CommitChangelistDialog2" timestamp="1577783960267">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="466" y="128" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1577783960267" />
     <state x="0" y="164" key="SettingsEditor" timestamp="1576817231554">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
