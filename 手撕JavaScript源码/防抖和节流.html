@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+<style>
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #output {
+    font-size: 20px;
+  }
+</style>
+
+<body>
+  <div id="container">
+    <label for="input1">未作任何处理：<input id="input1"></label>
+    <label for="input2">防抖：<input id="input2"></label>
+    <label for="input3">节流：<input id="input3"></label>
+    <label for="output">输出：</label>
+    <textarea id="output" name="" id="" cols="10" rows="3"></textarea>
+  </div>
+</body>
+<script>
+  let outputBox = document.getElementById('output')
+  let input1 = document.getElementById('input1')
+  let input2 = document.getElementById('input2')
+  let input3 = document.getElementById('input3')
+
+  function ajax(content) {
+    outputBox.innerHTML = content
+  }
+  input1.addEventListener('keyup', function (e) {
+    ajax(e.target.value)
+  })
+
+  // 防抖
+  function debounce(func, wait) {
+    let timeout;
+    return function () {
+      let context = this; // 指向全局
+      let args = arguments;
+      if (timeout) {
+        clearTimeout(timeout);
+      }
+      timeout = setTimeout(() => {
+        func.apply(context, args); // context.func(args)
+      }, wait);
+    };
+  }
+
+  let debounceAjax = debounce(ajax, 500)
+
+  input2.addEventListener('keyup', function (e) {
+    debounceAjax(e.target.value)
+  })
+
+
+  // 节流
+  function throttle(fn, delay) {
+    let preTime = Date.now()
+    return function () {
+      let context = this
+      let args = arguments
+      let curTime = Date.now()
+      if (curTime - preTime > delay) {
+        fn.apply(context, args)
+        preTime = curTime
+      }
+    }
+  }
+  let throttleAjax = throttle(ajax, 500)
+
+  input3.addEventListener('keyup', function (e) {
+    throttleAjax(e.target.value)
+  })
+</script>
+
+</html>

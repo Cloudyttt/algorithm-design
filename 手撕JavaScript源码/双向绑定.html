@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    #s1 {
+      position: relative;
+      background-color: black;
+      width: 100px;
+      height: 100px;
+    }
+
+    #s2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: brown;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <label for="input"><input type="text" name="input" id="input"></label>
+  <button id="btn">666</button>
+  <h1 id="h1">0</h1>
+  <script>
+    // 数据
+    const data = {
+      text: 'default'
+    };
+    const input = document.getElementById('input');
+    const h1 = document.getElementById('h1');
+    const btn = document.getElementById('btn')
+    // Object.defineProperty 数据劫持
+    Object.defineProperty(data, 'text', {
+      // 数据变化 --> 修改视图
+      set(newVal) {
+        input.value = newVal;
+        h1.innerHTML = newVal;
+      }
+    });
+    // 视图更改 --> 数据变化
+    input.addEventListener('keyup', function (e) {
+      data.text = e.target.value;
+    });
+
+    // Vue 3.x的proxy 版本
+    const handler = {
+      set(target, key, value) {
+        target[key] = value;
+        // 数据变化 --> 修改视图
+        input.value = value;
+        span.innerHTML = value;
+        return value;
+      }
+    };
+    const proxy = new Proxy(data, handler);
+    // 视图更改 --> 数据变化
+    input.addEventListener('keyup', function (e) {
+      proxy.text = e.target.value;
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+<style>
+  body {
+    min-width: 550px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #header,
+  #footer {
+    background: rgba(29, 27, 27, 0.726);
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  .column {
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+    float: left;
+  }
+
+  #center {
+    margin: 0 150px 0 200px;
+    background: rgb(206, 201, 201);
+  }
+
+  #left {
+    width: 200px;
+    margin-left: -100%;
+    background: rgba(95, 179, 235, 0.972);
+  }
+
+  #right {
+    width: 150px;
+    margin-left: -150px;
+    background: rgb(231, 105, 2);
+  }
+
+  #footer {
+    clear: both;
+  }
+</style>
+
+<body>
+  <div id="header">#header</div>
+
+  <div id="container" class="column">
+    <div id="center">#center</div>
+  </div>
+  <div id="left" class="column">#left</div>
+  <div id="right" class="column">#right</div>
+  <div id="footer">#footer</div>
+</body>
+
+</html>

@@ -55,6 +55,17 @@ let quickSort2 = arr => {
   return quickSort2(left).concat([pivot], quickSort2(right));
 };
 
+let quickSort3 = array => {
+  let pivot = array[array.length - 1]
+  let left = array.filter((v, i) => v <= pivot && i != array.length -1)
+  let right = array.filter(v => v > pivot)
+  return [...quickSort(left), pivot, ...quickSort(right)]
+}
+
+
 let arr = [6, 2, 1, 4, 3, 9, 5, 7, 8]
 let sortedArray = quickSort2(arr)
 console.log(sortedArray)
+
+
+

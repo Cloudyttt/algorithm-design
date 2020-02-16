@@ -1,0 +1,93 @@
+<!-- 圣杯 -->
+<style>
+  .cloumn {
+    text-align: center;
+    height: 300px;
+  }
+
+  #container {
+    overflow: hidden;
+  }
+
+  #center,
+  #left,
+  #right {
+    float: left;
+  }
+
+  #center {
+    width: 100%;
+  }
+
+  #left {
+    width: 200px;
+    margin-left: -100%;
+  }
+
+  #right {
+    width: 150px;
+    margin-left: -150px;
+  }
+
+  #header,
+  #footer {
+    height: 60px;
+  }
+</style>
+
+<body>
+  <div id="header"></div>
+  <div id="container">
+    <div id="center" class="cloumn"></div>
+    <div id="left" class="cloumn"></div>
+    <div id="right" class="cloumn"></div>
+  </div>
+  <div id="footer"></div>
+</body>
+
+
+<!-- 双飞翼 -->
+<style>
+  .cloumn {
+    float: left;
+    text-align: center;
+    height: 300px;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  #center {
+    width: 100%;
+  }
+
+  #left {
+    width: 200px;
+    margin-left: -100%;
+  }
+
+  #right {
+    width: 150px;
+    margin-left: -150px;
+  }
+
+  #header,
+  #footer {
+    height: 60px;
+  }
+
+  #footer {
+    clear: both;
+  }
+</style>
+
+<body>
+  <div id="header"></div>
+  <div id="container">
+    <div id="center"></div>
+  </div>
+  <div id="left" class="cloumn"></div>
+  <div id="right" class="cloumn"></div>
+  <div id="footer"></div>
+</body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+    #s1 {
+      position: relative;
+      background-color: black;
+      width: 100px;
+      height: 100px;
+    }
+
+    #s2 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: brown;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="color-list">
+    <li>red</li>
+    <li>yellow</li>
+    <li>blue</li>
+    <li>green</li>
+    <li>black</li>
+    <li>white</li>
+  </ul>
+  <script>
+    (function () {
+      var color_list = document.getElementById('color-list');
+      color_list.addEventListener('click', showColor, true);
+
+      function showColor(e) {
+        var x = e.target;
+        if (x.nodeName.toLowerCase() === 'li') {
+          alert(x.innerHTML);
+        }
+        console.log('e.target => ', e.target)
+        console.log('e.currentTarget => ', e.currentTarget)
+      }
+    })();
+  </script>
+</body>
+
+</html>
