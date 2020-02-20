@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+
+    .box0 {
+      position: static;
+      margin-bottom: -100px;
+      background-color: red;
+      z-index: 0;
+    }
+
+    .box1 {
+      z-index: -1;
+      margin: 20px;
+      background-color: blue;
+    }
+
+    .box2 {
+      margin: 40px;
+      background-color: cadetblue;
+    }
+
+    .box3 {
+      display: inline;
+      margin: 60px;
+      background-color: chartreuse;
+    }
+
+    .box4 {
+      margin: 80px;
+      background-color: sienna;
+    }
+
+    .box5 {
+      margin: 100px;
+      background-color: orange;
+      z-index: 0;
+    }
+
+    .box6 {
+      position:static;
+      margin: 120px;
+      background-color: red;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box box0"></div>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+  <span class="box box3"></span>
+  <div class="box box4"></div>
+  <div class="box box5"></div>
+  <div class="box box6"></div>
+  <script>
+  </script>
+</body>
+
+</html>

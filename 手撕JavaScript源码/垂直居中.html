@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .sp {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .container {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 10px;
+      background-color: black;
+    }
+
+    .container-flex {
+
+      position: relative;
+      width: 400px;
+      height: 300px;
+      margin: 10px;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      width: 100px;
+      height: 60px;
+      background-color: brown;
+    }
+
+    .box1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: red;
+    }
+
+    .box2 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -30px;
+      margin-left: -50px;
+      background-color: green;
+    }
+
+    .box3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <span class="sp">666</span>
+  <button></button>
+  <span class="sp">666</span>
+  <div class="box"></div>
+  <div class="container">
+    <div class="box box1"></div>
+  </div>
+  <div class="container">
+    <div class="box box2"></div>
+  </div>
+  <div class="container-flex">
+    <div class="box box3"></div>
+  </div>
+
+  <script>
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      background-color: pink;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <button></button>
+  <button></button>
+  <script>
+    var divEle = document.getElementsByTagName('div')[0]
+    var mouse = {
+      mouseLock: false,
+      mouseEleClient: {
+        t: 0,
+        l: 0
+      }
+    }
+    divEle.onmousedown = function (e) { //当鼠标在divEle按下时触发事件
+      e = e || window.event
+      var l = e.clientX
+      var t = e.clientY
+      mouse.mouseEleClient.t = t - this.offsetTop
+      mouse.mouseEleClient.l = l - this.offsetLeft
+      mouse.mouseLock = true
+    }
+    divEle.onmouseup = function (e) { //当鼠标松开时触发事件
+      mouse.mouseLock = false
+    }
+    window.onmousemove = function (e) { //当鼠标移动时持续触发
+      if (mouse.mouseLock) {
+        e = e || window.event
+        var l = e.clientX
+        var t = e.clientY
+        var divT = t - mouse.mouseEleClient.t
+        var divL = l - mouse.mouseEleClient.l
+        divEle.style.top = divT + 'px'
+        divEle.style.left = divL + 'px'
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML5拖拽</title>
+  <meta charset="utf-8">
+  <style>
+    #div1 {
+      width: 350px;
+      height: 200px;
+      padding: 10px;
+      border: 1px solid #aaaaaa;
+    }
+
+    #drag1 {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <p>拖动红框到矩形框中:</p>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)"
+    ondragleave="dragLeave(event)"></div>
+  <br>
+  <div id="drag1" draggable="true" ondragstart="dragStart(event)" ondragEnd="dragEnd(event)" ondrag="drag(event)"
+    width="300" height="56">
+
+    <script>
+      // 被拖动元素
+      // dragstart：事件主体是被拖放元素，在开始拖放被拖放元素时触发，。
+      // darg：事件主体是被拖放元素，在正在拖放被拖放元素时触发。
+      // dragenter：事件主体是目标元素，在被拖放元素进入某元素时触发。
+      // dragover：事件主体是目标元素，在被拖放在某元素内移动时触发。
+      // dragleave：事件主体是目标元素，在被拖放元素移出目标元素是触发。
+      // drop：事件主体是目标元素，在目标元素完全接受被拖放元素时触发。
+      //dragend：事件主体是被拖放元素，在整个拖放操作结束时触发。
+      
+      function dragStart(ev) {
+        console.log('dragStart')
+        ev.dataTransfer.setData("Text", ev.target.id);
+      }
+
+      function drag(ev) {
+        console.log('drag')
+      }
+
+      function dragEnd(ev) {
+        console.log('dragEnd')
+      }
+
+      // 目标容器
+      function allowDrop(ev) {
+        console.log('ondragOver')
+        ev.preventDefault();
+      }
+
+      function drop(ev) {
+        console.log('drop')
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+
+      function dragEnter(ev) {
+        console.log('dragEnter')
+      }
+
+      function dragLeave(ev) {
+        console.log('dragLeave')
+      }
+    </script>
+</body>
+
+</html>
