@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>transition</title>
+    <style>
+        #box {
+            height: 100px;
+            width: 100px;
+            background: red;
+            transition: transform 1s ease-in 1s;
+        }
+
+        #box:hover {
+            transform: rotate(180deg) scale(.5, .5);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>
